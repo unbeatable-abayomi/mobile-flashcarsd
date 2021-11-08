@@ -33,8 +33,7 @@ class App extends React.Component {
             }));
             this.setState({hasLoaded: true});
         });
-        // TODO: Local Notifications is no longer available in current version of expo
-        // so using this alert notification as a substitute
+  
         clearAlertNotification();
         setAlertNotification(120);
     }
@@ -90,8 +89,7 @@ class App extends React.Component {
     }
 
     render() {
-        // TODO: remove logging
-        // console.log("App rendering with state = ", this.state);
+ 
         if (! this.state.hasLoaded) {
             return (
                 <View style={styles.loading}>
@@ -130,7 +128,7 @@ class App extends React.Component {
                             inactiveTintColor: slate,
                         }}
                     >
-                        {/* TODO: using AppContext could be more efficient than using callback to pass props */}
+                       
                         <Tab.Screen name="Decks">
                             {props => <NavDecks {...props} decks={this.state.decks} addNewCard={this.addNewCard} addNewDeck={this.addNewDeck} />}
                         </Tab.Screen>

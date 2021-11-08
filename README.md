@@ -17,6 +17,7 @@ I built the app with create-react-native-app and used yarn to install the packag
 - Git clone the repo and then run the following commands:
   - `cd mobile-flashcards`
   - `yarn install`
+  - `yarn web`
   - `expo start`
 
 ## Development Approach

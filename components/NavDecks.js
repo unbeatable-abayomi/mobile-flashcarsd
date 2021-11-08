@@ -14,7 +14,6 @@ class NavDecks extends Component {
         return (
             <View style={styles.primaryView}>
                 <DeckStack.Navigator initialRouteName='DeckList' screenOptions={{headerTitleAlign: 'center'}}>
-                    {/* TODO: using AppContext could be more efficient than using callback to pass props */}
                     {decks !== null && Object.keys(decks).length > 0 && Object.keys(decks).map((deckName) => {
                         const deck = this.props.decks[deckName];
                         return (

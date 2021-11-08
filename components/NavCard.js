@@ -65,7 +65,7 @@ class NavCard extends Component {
         return (
             <View style={styles.primaryView}>
                 <QuestionsStack.Navigator initialRouteName="DeckStart" screenOptions={{headerShown: false}}>
-                    {/* TODO: using AppContext could be more efficient than using callback to pass props */}
+   
                     <QuestionsStack.Screen name="DeckStart" options={{headerStyle: {height: 70}}}>
                         {props => <DeckStart {...props} deck={deck} answered={this.answered} correct={this.correct} />}
                     </QuestionsStack.Screen>
