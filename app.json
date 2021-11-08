@@ -1,4 +1,6 @@
 {
+  "name": "mobile-flashcards",
+  "displayName": "mobile-flashcards",
   "expo": {
     "name": "mobile-flashcards",
     "slug": "mobile-flashcards",
@@ -6,6 +8,5 @@
     "assetBundlePatterns": [
       "**/*"
     ]
-  },
-  "name": "mobile-flashcards"
+  }
 }
